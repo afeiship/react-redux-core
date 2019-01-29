@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import nx from 'next-js-core2';
 
-export default function connect(inArgs) {
-  const args = nx.slice(inArgs);
+export default function connect() {
+  const args = nx.slice(arguments);
   return function wrapWithConnect(WrappedComponent) {
     class Connect extends React.Component {
       static contextTypes = {
