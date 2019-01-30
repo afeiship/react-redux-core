@@ -61,7 +61,7 @@ function connect() {
         value: function trySubscribe() {
           var _this2 = this;
 
-          this.storeRes = this.store.subscribe(function () {
+          this.unsubscribe = this.store.subscribe(function () {
             _this2.handleChange();
           });
           this.handleChange();
@@ -70,7 +70,7 @@ function connect() {
         key: 'tryUnsubscribe',
         value: function tryUnsubscribe() {
           if (this.unsubscribe) {
-            this.storeRes.destroy();
+            this.unsubscribe();
             this.unsubscribe = null;
           }
         }

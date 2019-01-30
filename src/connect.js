@@ -25,7 +25,7 @@ export default function connect() {
       }
 
       trySubscribe() {
-        this.storeRes = this.store.subscribe(() => {
+        this.unsubscribe = this.store.subscribe(() => {
           this.handleChange();
         });
         this.handleChange();
@@ -33,7 +33,7 @@ export default function connect() {
 
       tryUnsubscribe() {
         if (this.unsubscribe) {
-          this.storeRes.destroy();
+          this.unsubscribe();
           this.unsubscribe = null;
         }
       }
