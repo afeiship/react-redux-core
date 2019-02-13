@@ -45,6 +45,7 @@ export default function connect() {
           });
         }
       }
+
       mapStateToProps() {
         const { storeState } = this.state;
         if (args.length > 0) {
@@ -57,6 +58,7 @@ export default function connect() {
         }
         return storeState;
       }
+
       render() {
         return React.createElement(WrappedComponent, this.mapStateToProps());
       }
