@@ -1,9 +1,9 @@
 {
-  "name": "react-redux-core",
+  "name": "react-redux-lite",
   "version": "1.0.0",
-  "description": "React redux core.",
+  "description": "Lightweight version of the react-redux library.",
   "main": "dist/index.js",
-  "repository": "git@github.com:afeiship/react-redux-core.git",
+  "repository": "git@github.com:afeiship/react-redux-lite.git",
   "author": "feizheng <1290657123@qq.com>",
   "license": "MIT",
   "scripts": {

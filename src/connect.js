@@ -58,7 +58,7 @@ export default function connect() {
         return storeState;
       }
       render() {
-        return <WrappedComponent {...this.mapStateToProps()} />;
+        return React.createElement(WrappedComponent, this.mapStateToProps());
       }
     }
     return Connect;

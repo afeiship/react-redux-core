@@ -1,10 +1,10 @@
-# react-redux-core
-> React redux core.
+# react-redux-lite
+> Lightweight version of the react-redux library.
 
 
 ## install:
 ```bash
-npm install -S afeiship/react-redux-core --registry=https://registry.npm.taobao.org
+npm install -S afeiship/react-redux-lite --registry=https://registry.npm.taobao.org
 ```
 
 ## usage:
